@@ -63,8 +63,8 @@ def create_vm(config, box, name)
     cpus = 1
     memory = 512
     boxname = box[:name]
-    box = box[:box]
     type = box[:type] || :headless
+    box = box[:box]
     hostname = name.to_s
     scripts = []
 
